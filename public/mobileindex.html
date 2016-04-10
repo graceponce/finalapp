@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ferreteria Famaco</title>
+  <link rel="stylesheet" href="/css/jquery.mobile.min.css" />
+  <link rel="stylesheet" href="/css/jquery.mobile.theme.min.css" />
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery.mobile.min.js"></script>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/agency.css' />
+  <link rel='stylesheet' href='/css/bootstrap.min.css' />
+  <link rel='stylesheet' href='/css/shop-homepage.css' />
+  <script src="/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div data-role="page" id="page_proyectList" style="overflow:hidden;">
+    <div data-role="header" data-position="fixed">
+      <h3>Bienvenido a Ferreteria Famaco</h3>
+      <a href="#nav-panel"  data-icon="bars" data-iconpos="notext" >Menú<span class="caret"></span></a>
+      <a href="#page_newUser" data-role="button" data-iconpos="notext"  data-icon="power" data-iconpos="right" data-inline="true">cerrar sesion</a>
+    </div>
+    <div data-role="panel" data-position-fixed="true" data-display="push" id="nav-panel">
+          <ul data-role="listview">
+            <li data-icon="delete"><a href="#page_proyectList" data-rel="close">close menu</a></li>
+              <li>
+              <a href="#page_productlist"  class="ui-btn ui-corner-all ui-icon-shop ui-btn-icon-right">productos</a>
+            </li>
+            <li>
+              <a href="#page_contactanos"  class="ui-btn ui-corner-all ui-icon-phone ui-btn-icon-right">contactanos</a>
+            </li>
+          </ul>
+    </div>
+
+
+    <div class="ui-content" role="main">
+      <ul data-role="listview" id="proyectsListView">
+        <div class="container">
+
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <center><img class=" img-responsive"  src="/screenshots/Background_mano_mujer_difuminado_v2copi.png"></center>
+              </div>
+            </div>
+
+
+          <section id="contact">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Conocenos</h2>
+                  <h3 class="section-subheading text-muted">compra con FAMACO</h3>
+                  <h4 class="section-heading">Nuestros Productos</h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <!-- Services Section -->
+                      <section id="services">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-lg-12">
+                              <ul class="timeline">
+                                <li>
+                                  <div class="timeline-image">
+                                    <center><img class="img-circle img-responsive" src="/screenshots/1.jpg"></center>
+                                  </div>
+                                  <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                      <h4>Para</h4>
+                                      <h4 class="subheading">La Construccion</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                      <p class="text-muted">Contamos con productos para contruccion</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                  <div class="timeline-image">
+                                    <center><img class="img-circle img-responsive" src="/screenshots/12189598_1519708021656807_6990032171642603465_n.jpg" alt=""></center>
+                                  </div>
+                                  <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                      <h4>Para</h4>
+                                      <h4 class="subheading">La Oficina</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                      <p class="text-muted">Contamos con productos para oficina desde escritorios sillas a productos mas pequeños como papel o cuadernos</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li>
+                                  <div class="timeline-image">
+                                    <center><img class="img-circle img-responsive" src="/screenshots/11221766_1522739221353687_320407018877571110_n.jpg" alt=""></center>
+                                  </div>
+                                  <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                      <h4>Para</h4>
+                                      <h4 class="subheading"> El Hogar</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                      <p class="text-muted">Contamos con productos para el hogar todo lo que puedas necesitar</p>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                  <div class="timeline-image">
+                                    <center><img class="img-circle img-responsive" src="/screenshots/12108074_1515122935448649_5117136268774903581_n.jpg" alt=""></center>
+                                  </div>
+                                  <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                      <h4>De</h4>
+                                      <h4 class="subheading">La Seguridad</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                      <p class="text-muted">Contamos con productos para la seguridad de tu empresa o de tu hogar</p>
+                                    </div>
+                                  </div>
+                                </li>
+                              </ul>
+
+                            </div>
+                          </div>
+                      </section>
+                      </div>
+
+                      <div class="clearfix"></div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+          </section>
+          <!-- Services Section -->
+          <section id="services">
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-6">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                </span>
+                  <h4 class="service-heading"><h2 class="featurette-heading">»  <span class="text-muted">MISIÓN</span></h2></h4>
+                  <p class="text-muted">Distribución de todos los materiales de ferretería y de construcción para la satisfacción del cliente en el menor tiempo requerido, con la mejor atención, al mejor precio y la mayor confiabilidad del mercado.</p>
+                </div>
+                <div class="col-md-6">
+                  <span class="fa-stack fa-4x">
+                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                </span>
+                  <h4 class="service-heading"><h2 class="featurette-heading">»  <span class="text-muted">VISIÓN</span></h2></h4>
+                  <p class="text-muted">Ser la empresa distribuidora de líneas y productos de construcción más grande a nivel nacional consolidando la imagen de FAMACO S.R.L. como sinónimos de crecimiento, innovación, seguridad y valor; a través de una constante mejora continua
+                    en la creación de valor, el capital intelectual y las ventajas competitivas.</p>
+                </div>
+
+              </div>
+            </div>
+          </section>
+      </ul>
+      </div>
+      </br>
+      <div class="container">
+        <div class="col-lg-12">
+          <center>
+            <h1>Comenta sobre nuestra app </h1></center>
+          <div class="row">
+            <div class="col-md-6">
+              <form id="form">
+                <input type="emaile" name="txtemaile" placeholder="correo@electronico.com" />
+                <input type="coment" name="txtComent" placeholder="comentario o mensaje sobre la aplicacion" />
+                <input type="button" value="Registrar" id="btnNewComent" class="ui-btn" />
+                <div class="msgs">
+
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div data-role="content" class="ui-content" role="main">
+          <ul data-role="listview" id="contactsListView" data-mini="true">
+
+          </ul>
+        </div>
+
+
+        <section>
+
+        </section>
+
+
+        <div data-role="footer" data-position="fixed">
+
+          <div data-role="navbar">
+            <ul>
+              <li>
+                <center>Copyright &copy; FAMACO S. de RL - 2016 | Universidad: <a href="http://www.unicah.edu">UNICAH</a></center>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+      </div>
+      </div>
+
+    <div data-role="page" id="page_productlist" data-add-back-btn="true">
+      <div data-role="header" data-position="fixed" data-add-back-btn="true">
+        <h3>Productos</h3>
+      </div>
+      <div data-role="content" class="ui-content" role="main">
+        <ul data-role="listview" id="productsListView" data-mini="true" data-filter="true">
+
+        </ul>
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <center>Copyright &copy; FAMACO S. de RL - 2016 | Universidad <a href="http://www.unicah.edu">UNICAH</a></center>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div data-role="page" id="page_carDetail" data-add-back-btn="true">
+      <div data-role="header" data-position="fixed" data-add-back-btn="true">
+        <h3>carrito</h3>
+      </div>
+      <div data-role="content" class="ui-content" role="main" id="carDetail">
+
+      </div>
+      <div data-role="footer" data-position="fixed">
+        <div data-role="controlgroup" data-type="horizontal">
+          <a href="#page_carDetail" data-role="button" data-icon="plus">Comprar</a>
+          <a href="index.html" data-role="button" data-icon="minus">Borrar</a>
+          <a href="index.html" data-role="button" data-icon="delete">Cancelar</a>
+        </div>
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <center>Copyright &copy; FAMACO S. de RL - 2016 | Universidad <a href="http://www.unicah.edu">UNICAH</a></center>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div data-role="page" id="page_productDetail" data-add-back-btn="true">
+      <div data-role="header" data-position="fixed" data-add-back-btn="true">
+        <h3>Productos</h3>
+      </div>
+      <div data-role="content" class="ui-content" role="main" id="productDetail">
+
+
+      </div>
+
+      <div data-role="footer" data-position="fixed">
+        <div data-role="controlgroup" data-type="horizontal">
+          <a href="#page_carDetail" data-role="button" data-icon="plus">Comprar</a>
+          <a href="index.html" data-role="button" data-icon="minus">Borrar</a>
+          <a href="index.html" data-role="button" data-icon="delete">Cancelar</a>
+        </div>
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <center>Copyright &copy; FAMACO S. de RL - 2016 | Universidad <a href="http://www.unicah.edu">UNICAH</a></center>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div data-role="page" id="page_newUser" data-add-back-btn="true">
+      <div data-role="header" data-position="fixed" data-add-back-btn="true">
+        <h3>Iniciar Sesion</h3>
+      </div>
+      <div data-role="content" class="ui-content" role="main">
+        <div class="container">
+          <form>
+            <input type="email" name="txtEmail" placeholder="correo@electronico.com" />
+            <input type="password" name="txtPswd" placeholder="contraseña 8 alphanumericos un numero" />
+
+            <input type="submit" href="/mobileindex.html" value="Registrar" id="btnNewUser" class="ui-btn" />
+            <div class="msgs">
+
+            </div>
+          </form>
+        </div>
+        <div data-role="footer" data-position="fixed">
+          <div data-role="navbar">
+            <ul>
+              <li>
+                <center>Copyright &copy; FAMACO S. de RL - 2016 | Universidad: <a href="http://www.unicah.edu">UNICAH</a></center>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div data-role="page" id="page_contactanos" data-add-back-btn="true">
+      <div data-role="header" data-position="fixed" data-add-back-btn="true">
+        <h3>Contactanos</h3>
+      </div>
+      <div data-role="content" class="ui-content" role="main">
+        <section>
+          <div class="row">
+                      <div class="col-lg-12 text-center">
+                        <center><img class=" img-responsive" width="225" src="/screenshots/1506462_1458088304485446_8989748443774803178_n.jpg"></center>
+                      </div>
+                    </div>
+                    </br>
+                    <div class="row">
+                      <div class="col-lg-12 text-center">
+                        <h3 class="section-subheading text-muted">Famaco es una empresa al alcance de ti</h3>
+                      </div>
+                    </div>
+
+          <p class="text-center">
+            <p class="text-center">
+              <p class="text-center"><b>Movil MEGA FAMACO: </b>504-2772-7526</p>
+              <p class="text-center"><b>Movil FAMACO: </b>504-2772-4232</p>
+              <p class="text-center"><b>Direccion MEGA FAMACO: </b>Blvd. Roberto Romero Larios,dos cuadras al norte de la sub estacion de la ENEE
+              </p>
+              <p class="text-center"><b>Direccion FAMACO: </b>Blvd. Cuarto Centenario
+              </p>
+              <p class="text-center"><b>Horario: </b>Lun-Dom: 7:00am-19:00pm</p>
+              </br>
+              </br>
+        </section>
+        <div class="col-lg-12">
+          <center>
+            <h3>mandanos un comentario o un mensaje</h3></center>
+          <div class="row">
+            <div class="col-md-6">
+              <form id="newbacklog_form">
+                <input type="email" name="txtemail" placeholder="correo@electronico.com" />
+                <input type="description" rows=8 cols=40 name="description"
+                id="description" placeholder="Comentario"/>
+                <input type="button" value="Registrar" id="btnNewComentProd" class="ui-btn" />
+                <div class="msgs">
+
+              </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+          <ul>
+            <li>
+              <center>Copyright &copy; FAMACO S. de RL - 2016 | Universidad: <a href="http://www.unicah.edu">UNICAH</a></center>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="/js/appclient.js"></script>
+</body>
+
+</html>

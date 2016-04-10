@@ -1,0 +1,35 @@
+var prod=[{"nombre":"casco de seguridad","foto":"/screenshots/casco.jpg","precio":"200.00"},{"nombre":"pintura para hogar","foto":"/screenshots/DSC01735.jpg","precio":"150.00"},{"nombre":"accesorios para jardineria","foto":"/screenshots/12227734_1520295781598031_2357735805943929490_n.jpg","precio":"250.00"},{"nombre":"lavatrastos","foto":"/screenshots/12208782_1519871074973835_2202995106069043669_n.jpg","precio":"450.00"},{"nombre":"lozasanitaria","foto":"/screenshots/12208319_334440123397804_3023775812331731141_n.jpg","precio":"650.00"}]
+
+var prod={"nombre":"herramientasdeconstruccion","foto":"/screenshots/DSC01727.jpg",precio":"350.00"}
+
+var prod={"nombre":"accesorios para ducha","foto":"/screenshots/12342702_1525488044412138_6171602918478196153_n.jpg","precio":"150.00"}
+
+var prod={"nombre":"bañeras","foto":"/screenshots/12299223_1525488034412139_5745026688333769382_n.jpg","precio":"850.00"}
+
+var prod={"nombre":"plasmas","foto":"/screenshots/12246675_1522739428020333_1617513804370976011_n.jpg","precio":"6650.00"}
+
+var prod={"nombre":"hierro forjado para decoracion","foto":"/screenshots/12191906_1519434165017526_3635402488823632039_n.jpg","precio":"350.00"}
+
+var prod={"nombre":"papeleria y utiles","foto":"/screenshots/12189598_1519708021656807_6990032171642603465_n.jpg","precio":"100.00"}
+
+var prod={"nombre":"accesorios para mascotas","foto":"/screenshots/12107226_1516638031963806_3063029368384092466_n.jpg","precio":"350.00"}
+
+var prod={"nombre":"accesorios para reposteria","foto":"/screenshots/12118826_1515581848736091_5120231409286476612_n.jpg","precio":"250.00"}
+
+var prod={"nombre":"impresoras epson","foto":"/screenshots/12115506_1513119392315670_6868054099167352408_n.jpg","precio":"2650.00"}
+
+var prod={"nombre":"camaras de seguridad","foto":"/screenshots/12108074_1515122935448649_5117136268774903581_n.jpg","precio":"1650.00"}
+
+var prod={"nombre":"laminas de techo","foto":"/screenshots/12029646_1512549525705990_102576181827927486_o.jpg","precio":"850.00"}
+
+var prod={"nombre":"molinos con motor electrico","foto":"/screenshots/11921618_1517483288545947_9121457237644072292_n.jpg","precio":"1050.00"}
+
+var prod={"nombre":"accesorios deportivos","foto":"/screenshots/11224407_1513861585574784_110681296570441235_n.jpg","precio":"850.00"}
+
+var prod={"nombre":"batidoras","foto":"/screenshots/11221766_1522739221353687_320407018877571110_n.jpg","precio":"650.00"}
+
+var prod={"nombre":"juguetes de niños","foto":"/screenshots/10978510_1518638765097066_6760661588226860369_n.jpg","precio":"650.00"}
+
+var prod={"nombre":"accesorios electricos","foto":"/screenshots/3331.jpg","precio":"150.00"}
+
+var prod={"nombre":"utensilios de construccion","foto":"/screenshots/1.jpg","precio":"850.00"}

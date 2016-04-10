@@ -1,0 +1,87 @@
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <a class="navbar-brand page-scroll" href="../" >
+    <div class="glyphicon glyphicon-home"   ></div></a>
+    </div>
+    <center><h5>Bienvenido a Ferreteria Famaco</h5></center>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/registrarus" data-role="button" data-iconpos="notext"  data-icon="edit" data-iconpos="right" data-inline="true">Registrar</a>
+        </li>
+        <li>
+          <a href="./users/login" data-role="button" data-iconpos="notext"  data-icon="user" data-iconpos="right" data-inline="true">Iniciar Sesion</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- Contact Section -->
+<section>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <h1>Iniciar Session</h1>
+
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-sm-6 col-sm-offset-3">
+      <form action="/users/login" method="post">
+          <div class="form-group {{emailHasError}}">
+            <label for="txtEmail">Correo Electronico</label>
+            <input type="email"
+            name="txtEmail"
+            id="txtEmail"
+            placeholder="tuCorreo@electronico.com"
+            value="{{txtEmail}}"
+            class="form-control" />
+          </div>
+          <div class="form-group {{pswdHasError}}">
+            <label for="txtPswd">Contraseña</label>
+            <input type="password"
+            name="txtPswd" id="txtPswd"
+            placeholder="tuContraseña"
+            class="form-control" />
+          </div>
+
+          <div class="{{errorMsgClass}}">
+            <ul>
+              {{#each errorMsgs}}
+                <li>
+                  {{this}}
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+
+          <div class="pull-right">
+            <br>
+            <button id="btnProcesar" class="btn btn-default" />Registrar</button>
+            <div class="danger hide" id="errorMsg">
+            </div>
+        </div>
+      </form>
+</div>
+<div class="navbar navbar-default navbar-fixed-bottom">
+  <center>Copyright &copy; FAMACO S. de RL - 2016 | Universidad <a href="http://www.unicah.edu">UNICAH</a></center>
+</div>
+</section>
+<script>
+$().ready(function(){
+  $('#btnProcesar').on('click',function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    //hacer validaciones de los campos
+    document.forms[0].submit();
+  });
+});
+</script>

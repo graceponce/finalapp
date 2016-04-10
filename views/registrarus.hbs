@@ -1,0 +1,165 @@
+
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <a class="navbar-brand page-scroll" href="./" >
+    <div class="glyphicon glyphicon-home"   ></div></a>
+    </div>
+    <center><h5>Bienvenido a Ferreteria Famaco</h5></center>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/registrarus" data-role="button" data-iconpos="notext"  data-icon="edit" data-iconpos="right" data-inline="true">Registrar</a>
+        </li>
+        <li>
+          <a href="./users/login" data-role="button" data-iconpos="notext"  data-icon="user" data-iconpos="right" data-inline="true">Iniciar Sesion</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
+<!-- Contact Section -->
+<section>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <h2>Registro de Usuarios</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <form id="frmInsertProd">
+
+          <div class="form-group {{EmailHasError}}">
+            <label>Nombre de usuario</label>
+            <input type="nombreUsuario" name="txtNombreUs" id="txtNombreUs" placeholder="nombre de usuario" value="{{txtNombreUs}}" class="form-control" />
+          </div>
+          <div class="form-group {{pwdHasError}}">
+            <label>Primer Apellido</label>
+            <input type="primerapellido" name="txtPrimerApellido" id="txtPrimerApellido" placeholder="primer apellido" value="{{txtPrimerApellido}}" class="form-control" />
+          </div>
+          <div class="form-group {{pwdHasError}}">
+            <label>Segundo Apellido</label>
+            <input type="segundoapellido" name="txtSegundoApellido" id="txtSegundoApellido" placeholder="segundo apellido" value="{{txtSegundoApellido}}" class="form-control" />
+          </div>
+          <div class="form-group {{pwdHasError}}">
+            <label>Telefono</label>
+            <input type="telefono" name="txtTelefono" id="txtTelefono" placeholder="telefono" value="{{txtTelefono}}" class="form-control" />
+          </div>
+          <div class="form-group {{pwdHasError}}">
+            <label>Identidad</label>
+            <input type="identidad" name="txtId" id="txtId" placeholder="Identidad" value="{{txtId}}" class="form-control" />
+          </div>
+          <div class="form-group {{pwdHasError}}">
+            <label>Fecha de Nacimiento</label>
+            <input type="fechanac" name="txtFechaNac" id="txtFechaNac" placeholder="Fecha de Nacimiento" value="{{txtFechaNac}}" class="form-control" />
+          </div>
+          <div class="form-group {{EmailHasError}}">
+            <label>Correo electronico</label>
+            <input type="correo" name="txtEmail" id="txtEmail" placeholder="correo de usuario" value="{{txtEmail}}" class="form-control" />
+          </div>
+          <div class="form-group {{pwdHasError}}">
+            <label>Contraseña</label>
+            <input type="password" name="txtContrasena" id="txtContrasena" placeholder="Contraseña" value="{{txtContrasena}}" class="form-control" />
+          </div>
+          <div class="{{errorMsjClass}}">
+            <ul>
+              {{#each errorMsgs}}
+                <li>
+                  {{this}}
+                </li>
+              {{/each}}
+            </ul>
+          </div>
+
+          <div class="pull-right">
+            <br>
+            <button id="btnRegistrar" class="btn btn-default" />Registrar</button>
+            <a href="/" class="btn btn-default">Cancelar</a>
+            <div class="danger hide" id="errorMsg">
+
+            </div>
+            </br>
+          </div>
+        </form>
+        </br>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-default navbar-fixed-bottom">
+    <center>Copyright &copy; FAMACO S. de RL - 2016 | Universidad <a href="http://www.unicah.edu">UNICAH</a></center>
+  </div>
+</section>
+<script>
+  $(document).ready(function(e) {
+    $("#btnRegistrar").on('click', function(ev) {
+
+      ev.preventDefault();
+      ev.stopPropagation();
+
+     if($("#txtNombreUs").val() == ""){
+          alert("El campo Nombre no puede estar vacío.");// Esta función coloca el foco de escritura del usuario en el campo Nombre directamente.
+          return false;
+      }
+      if($("#txtPrimerApellido").val() == ""){
+          alert("El campo primer apellido no puede estar vacío.");
+          return false;
+      }
+      if($("#txtSegundoApellido").val() == ""){
+          alert("El campo segundo apellido no puede estar vacío.");
+          return false;
+      }
+      if($("#txtTelefono").val() == ""){
+          alert("El campo telefono no puede estar vacío.");
+          return false;
+      }
+      if($("#txtId").val() == ""){
+          alert("El campo identidad no puede estar vacío.");
+          return false;
+      }
+      if($("#txtFechaNac").val() == ""){
+          alert("El campo fecha de nacimiento no puede estar vacío.");
+          return false;
+      }
+
+      var txtEmail = $('#txtEmail').val(),
+        txtNombreUs = $('#txtNombreUs').val(),
+        txtPrimerApellido = $('#txtPrimerApellido').val(),
+        txtSegundoApellido = $('#txtSegundoApellido').val(),
+        txtTelefono = $('#txtTelefono').val(),
+        txtId = $('#txtId').val(),
+        /*$("#datepicket").datepicket();*/
+        txtFechaNac = $('#txtFechaNac').val(),
+        txtContrasena = $('#txtContrasena').val()
+      $.post(
+        "/usersr/insertUs", {
+          "correo": txtEmail,
+          "nombreUsuario": txtNombreUs,
+          "primerapellido": txtPrimerApellido,
+          "segundoapellido": txtSegundoApellido,
+          "telefono": txtTelefono,
+          "identidad": txtId,
+          "fechanac": txtFechaNac,
+          "contrasena": txtContrasena
+        },
+        function(data, successtxt, xhr) {
+          console.log(data);
+          if (data.status == "ok") {
+            window.location.assign("/users/login");
+          }
+        },
+        "json"
+    ).fail(function(xhr, errortxt, se) {
+        console.log(xhr.responseJSON);
+        $('#errorMsg').html(xhr.responseJSON.error).removeClass("hide");
+      });
+    });
+  });
+</script>
